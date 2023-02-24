@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#010026",
+        "dark-blue": "#001934",
         blue: "#2CBCE9",
-        red: "#DC4492",
-        yellow: "#FDCC49",
+        red: "#DC4492", 
+        pink: "#E75480",
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
@@ -22,7 +22,7 @@ module.exports = {
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
-        opensans: ["Open Sans", "sans-serif"],
+        sourcecodepro: ["Source Code pro", "monospace"],
       },
     },
     screens: {
