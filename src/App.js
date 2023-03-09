@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react';
-import useMediaQuery from './hooks/useMediaQuery';
-import Navbar from './components/Navbar';
-import Dots from './components/Dots';
+import { useState, useEffect } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
+import Navbar from "./components/Navbar";
+import Dots from "./components/Dots";
+import Landing from "./pages/Landing";
 
 // start tailwind build process
 // npx tailwindcss -i ./src/index.css -o ./public/output.css --watch
@@ -19,8 +20,8 @@ function App() {
       } else {
         setTopOfPage(false);
       }
-    }
-    
+    };
+
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,14 +29,16 @@ function App() {
 
   return (
     <div className="app bg-dark-blue">
-      <Navbar topOfPage={topOfPage} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Navbar
+        topOfPage={topOfPage}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
       <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
-          <Dots 
-            currentPage = {currentPage}
-            setCurrentPage = {setCurrentPage}
-          />
+          <Dots currentPage={currentPage} setCurrentPage={setCurrentPage} />
         )}
+        <Landing setCurrentPage={setCurrentPage} />
       </div>
     </div>
   );
