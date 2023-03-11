@@ -6,9 +6,10 @@ module.exports = {
     extend: {
       colors: {
         "dark-blue": "#001934",
+        "slate-blue": "#6A93CB",
         blue: "#0070ff",
-        red: "#DC4492", 
-        pink: "#E75480",
+        red: "#DC4492",
+        pink: "#F77FBE",
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
@@ -35,4 +36,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

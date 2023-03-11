@@ -20,10 +20,13 @@ const Link = ({ page, currentPage, setCurrentPage }) => {
 const Navbar = ({ topOfPage, currentPage, setCurrentPage }) => {
   const [menuToggled, setMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
-  const navbarColor = topOfPage ? "" : "bg-blue";
+  const navbarColor = topOfPage ? "" : "bg-slate-blue";
+  const navbarTextColor = topOfPage ? "" : "text-dark-blue";
 
   return (
-    <nav className={`${navbarColor} z-40 w-full fixed top-0 py-6`}>
+    <nav
+      className={`${navbarColor} ${navbarTextColor} z-40 w-full fixed top-0 py-6`}
+    >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-4xl font-bold">AK</h4>
 
@@ -69,7 +72,7 @@ const Navbar = ({ topOfPage, currentPage, setCurrentPage }) => {
 
         {/* MOBILE VERSION */}
         {!isAboveSmallScreens && menuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-slate-blue w-[300px]">
             <div className="flex justify-end p-10">
               <button
                 className="text-4xl text-dark-blue"
@@ -78,7 +81,7 @@ const Navbar = ({ topOfPage, currentPage, setCurrentPage }) => {
                 ✘
               </button>
             </div>
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
+            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-dark-blue font-sourcecodepro">
               <Link
                 page="Home"
                 currentPage={currentPage}

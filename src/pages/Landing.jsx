@@ -20,7 +20,7 @@ const Landing = ({ setCurrentPage }) => {
           >
             <img
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-              max-w-[400px] md:max-w-[500px]"
+              max-w-[350px] md:max-w-[500px]"
               src="assets/profile-img.png"
               alt="profile img"
             />
@@ -28,12 +28,37 @@ const Landing = ({ setCurrentPage }) => {
         ) : (
           <img
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-            max-w-[400px] md:max-w-[500px]"
+            max-w-[350px] md:max-w-[500px]"
             src="assets/profile-img.png"
             alt="profile img"
           />
         )}
-        {/* Profile Description */}
+      </div>
+      {/* Profile Description */}
+      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+            Alex {""}
+            <span
+              className="xs:relative xs:font-semibold z-20 text-transparent bg-clip-text
+                bg-gradient-to-r from-[#A4BFEF] to-[#6A93CB]"
+            >
+              Kim
+            </span>
+          </p>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+            Full stack developer with a passion for building websites
+          </p>
+        </motion.div>
       </div>
     </section>
   );
