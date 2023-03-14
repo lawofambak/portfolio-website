@@ -56,7 +56,16 @@ const Landing = ({ setCurrentPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Full-stack web developer based in Los Angeles
+            Full-stack web developer based in Los Angeles.
+            <br />
+            {`Learn more about me below `}
+            <AnchorLink
+              className="text-lg hover:text-blue transition duration-500"
+              onClick={() => setCurrentPage("about")}
+              href="#about"
+            >
+              ↓
+            </AnchorLink>
           </p>
         </motion.div>
         {/* External Link Buttons */}
