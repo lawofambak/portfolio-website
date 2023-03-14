@@ -56,8 +56,45 @@ const Landing = ({ setCurrentPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Full stack developer with a passion for building websites
+            Full-stack web developer based in Los Angeles
           </p>
+        </motion.div>
+        {/* External Link Buttons */}
+        <motion.div
+          className="flex flex-col mt-5 gap-5 items-center md:items-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 1 }}
+          variants={{
+            hidden: { opacity: 0, x: -75 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <button
+            className="bg-gradient-to-r from-[#6481b8] to-[#BDD4E7] text-dark-blue rounded-lg
+              px-7 py-3 font-semibold hover:text-white transition duration-500 w-44"
+          >
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://github.com/lawofambak"
+            >
+              GitHub →
+            </a>
+          </button>
+          <button
+            className="bg-gradient-to-r from-[#6481b8] to-[#BDD4E7] text-dark-blue rounded-lg
+              px-7 py-3 font-semibold hover:text-white transition duration-500 w-44"
+          >
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="https://www.linkedin.com/in/alex-kim-57a5a3136/"
+            >
+              LinkedIn →
+            </a>
+          </button>
         </motion.div>
       </div>
     </section>
