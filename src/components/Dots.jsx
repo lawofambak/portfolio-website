@@ -8,33 +8,31 @@ const Dot = ({ currentPage, setCurrentPage }) => {
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
       <AnchorLink
-        className={`${currentPage === "home" ? currentStyle : "bg-dark-grey"}
+        className={`${currentPage === "home" ? currentStyle : "bg-white"}
           w-3 h-3 rounded-full`}
         href={`#home`}
         onClick={() => setCurrentPage("home")}
       />
       <AnchorLink
-        className={`${currentPage === "about" ? currentStyle : "bg-dark-grey"}
+        className={`${currentPage === "about" ? currentStyle : "bg-white"}
           w-3 h-3 rounded-full`}
         href={`#about`}
         onClick={() => setCurrentPage("about")}
       />
       <AnchorLink
-        className={`${currentPage === "skills" ? currentStyle : "bg-dark-grey"}
+        className={`${currentPage === "skills" ? currentStyle : "bg-white"}
           w-3 h-3 rounded-full`}
         href={`#skills`}
         onClick={() => setCurrentPage("skills")}
       />
       <AnchorLink
-        className={`${
-          currentPage === "projects" ? currentStyle : "bg-dark-grey"
-        }
+        className={`${currentPage === "projects" ? currentStyle : "bg-white"}
           w-3 h-3 rounded-full`}
         href={`#projects`}
         onClick={() => setCurrentPage("projects")}
       />
       <AnchorLink
-        className={`${currentPage === "contact" ? currentStyle : "bg-dark-grey"}
+        className={`${currentPage === "contact" ? currentStyle : "bg-white"}
           w-3 h-3 rounded-full`}
         href={`#contact`}
         onClick={() => setCurrentPage("contact")}

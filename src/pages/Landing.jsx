@@ -55,7 +55,7 @@ const Landing = ({ setCurrentPage }) => {
               Kim
             </span>
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="font-sourcecodepro mt-10 mb-7 text-sm text-center md:text-start">
             Full-stack web developer based in Los Angeles.
             <br />
             {`Learn more about me below `}

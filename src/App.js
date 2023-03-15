@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./components/Navbar";
 import Dots from "./components/Dots";
+import LineDivider from "./components/LineDivider";
 import Landing from "./pages/Landing";
+import About from "./pages/About";
 
 // start tailwind build process
 // npx tailwindcss -i ./src/index.css -o ./public/output.css --watch
@@ -39,6 +41,10 @@ function App() {
           <Dots currentPage={currentPage} setCurrentPage={setCurrentPage} />
         )}
         <Landing setCurrentPage={setCurrentPage} />
+      </div>
+      <LineDivider />
+      <div className="w-5/6 mx-auto md:h-full">
+        <About />
       </div>
     </div>
   );
