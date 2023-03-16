@@ -1,10 +1,6 @@
-import LineDivider from "../components/LineDivider";
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const About = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-
   return (
     <section id="about" className="pt-10 pb-24">
       <div className="md:flex md:justify-between md:gap-16 mt-28">
@@ -30,8 +26,8 @@ const About = () => {
             from an academic background in Economics with knowledge of game
             theory, international markets, and financial analysis.
             Professionally, I have previous work experience in buy-side M&A
-            advisory. I am constantly learning new technologies and keeping up
-            with new trends to enhance my skills.
+            advisory. I am always looking to learn and implement new innovative
+            technologies.
           </p>
         </motion.div>
         <motion.div

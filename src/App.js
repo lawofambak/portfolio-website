@@ -5,6 +5,7 @@ import Dots from "./components/Dots";
 import LineDivider from "./components/LineDivider";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 
 // start tailwind build process
 // npx tailwindcss -i ./src/index.css -o ./public/output.css --watch
@@ -46,6 +47,11 @@ function App() {
       <div className="w-5/6 mx-auto md:h-full">
         <About />
       </div>
+      <LineDivider />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Skills />
+      </div>
+      <LineDivider />
     </div>
   );
 }
