@@ -30,8 +30,8 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1 }}
           variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 1, x: 0 },
           }}
         >
           <p className="font-sourcecodepro text-center font-semibold underline">
@@ -110,8 +110,8 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 1.5 }}
           variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 1, x: 0 },
           }}
         >
           <p className="font-sourcecodepro text-center font-semibold underline">

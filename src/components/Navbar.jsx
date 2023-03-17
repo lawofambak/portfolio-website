@@ -61,11 +61,12 @@ const Navbar = ({ topOfPage, currentPage, setCurrentPage }) => {
           </div>
         ) : (
           <div>
-            <button
-              className="rounded-full p-2 text-4xl"
-              onClick={() => setMenuToggled(!menuToggled)}
-            >
-              ⚙︎
+            <button onClick={() => setMenuToggled(!menuToggled)}>
+              <img
+                className="w-[45px] h-[45px]"
+                src="assets/menu-icon.png"
+                alt="menu icon"
+              />
             </button>
           </div>
         )}

@@ -31,7 +31,7 @@ const About = () => {
           </p>
         </motion.div>
         <motion.div
-          className="md:w-2/3 mt-16 md:mt-0"
+          className="md:w-2/3 mt-16 md:mt-0 max-w-[850px] max-h-[850px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

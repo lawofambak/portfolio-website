@@ -6,10 +6,7 @@ import LineDivider from "./components/LineDivider";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-
-// start tailwind build process
-// npx tailwindcss -i ./src/index.css -o ./public/output.css --watch
-// https://www.youtube.com/watch?v=JSJ8ftr92Vw
+import Projects from "./pages/Projects";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -48,8 +45,12 @@ function App() {
         <About />
       </div>
       <LineDivider />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto">
         <Skills />
+      </div>
+      <LineDivider />
+      <div className="w-5/6 mx-auto">
+        <Projects />
       </div>
       <LineDivider />
     </div>
