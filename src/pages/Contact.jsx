@@ -64,8 +64,8 @@ const Contact = () => {
               </p>
               <button
                 className="text-white mt-6 font-semibold px-5 py-3 rounded-lg text-center bg-gradient-to-r from-cyan-400
-              via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300
-              dark:focus:ring-cyan-800"
+                via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300
+                dark:focus:ring-cyan-800"
                 onClick={generateMotivation}
               >
                 Generate Motivation
