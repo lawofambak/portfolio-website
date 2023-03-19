@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -51,6 +52,10 @@ function App() {
       <LineDivider />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineDivider />
+      <div className="w-5/6 mx-auto md:h-full">
+        <Contact />
       </div>
       <LineDivider />
     </div>
