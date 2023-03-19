@@ -2,7 +2,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const Landing = ({ setCurrentPage }) => {
+const Landing = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
@@ -15,12 +15,12 @@ const Landing = ({ setCurrentPage }) => {
         {isAboveMediumScreens ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
-            before:rounded-full before:w-full before:h-full before:border-2 before:border-blue
-            before:z-[-1]"
+              before:rounded-full before:w-full before:h-full before:border-2 before:border-blue
+              before:z-[-1]"
           >
             <img
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-              max-w-[350px] md:max-w-[500px]"
+                max-w-[350px] md:max-w-[500px]"
               src="assets/profile-img.png"
               alt="profile img"
             />
@@ -28,7 +28,7 @@ const Landing = ({ setCurrentPage }) => {
         ) : (
           <img
             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-            max-w-[350px] md:max-w-[500px]"
+              max-w-[350px] md:max-w-[500px]"
             src="assets/profile-img.png"
             alt="profile img"
           />
@@ -61,7 +61,6 @@ const Landing = ({ setCurrentPage }) => {
             {`Learn more about me below `}
             <AnchorLink
               className="text-lg hover:text-blue transition duration-500"
-              onClick={() => setCurrentPage("about")}
               href="#about"
             >
               ↓

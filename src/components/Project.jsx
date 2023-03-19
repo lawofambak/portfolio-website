@@ -13,7 +13,7 @@ const Project = ({ title, desc, repo, site }) => {
     >
       <div
         className="absolute h-full w-full opacity-0 hover:opacity-95 transition duration-500
-        bg-slate-blue z-30 flex flex-col justify-center items-center text-center p-12 text-white"
+          bg-slate-blue z-30 flex flex-col justify-center items-center text-center p-12 text-white"
       >
         <p className="text-2xl font-playfair font-semibold">{title}</p>
         <p className="mt-4">{desc}</p>

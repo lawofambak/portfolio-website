@@ -47,10 +47,10 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             variants={{
-              hidden: { opacity: 0, x: -75 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <img
@@ -64,8 +64,8 @@ const Contact = () => {
               </p>
               <button
                 className="text-white mt-6 font-semibold px-5 py-3 rounded-lg text-center bg-gradient-to-r from-cyan-400
-                via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300
-                dark:focus:ring-cyan-800"
+                  via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300
+                  dark:focus:ring-cyan-800"
                 onClick={generateMotivation}
               >
                 Generate Motivation
@@ -80,10 +80,10 @@ const Contact = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             variants={{
-              hidden: { opacity: 0, x: 75 },
-              visible: { opacity: 1, x: 0 },
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
             }}
           >
             <p className="font-playfair text-3xl">Contact Me</p>
@@ -151,7 +151,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className="font-semibold px-5 py-3 rounded-lg text-center bg-white text-dark-blue hover:bg-blue
-                hover:text-white transition duration-500 ease-in-out mt-5"
+                  hover:text-white transition duration-500 ease-in-out mt-5"
               >
                 Send Message
               </button>
@@ -164,10 +164,10 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           variants={{
-            hidden: { opacity: 0, x: 75 },
-            visible: { opacity: 1, x: 0 },
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
           }}
         >
           <p className="font-playfair text-3xl">Contact Me</p>

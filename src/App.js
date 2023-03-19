@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./components/Navbar";
-import Dots from "./components/Dots";
+import SideNav from "./components/SideNav";
 import LineDivider from "./components/LineDivider";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
@@ -10,7 +10,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("home");
   const [topOfPage, setTopOfPage] = useState(true);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -30,16 +29,10 @@ function App() {
 
   return (
     <div className="app bg-dark-blue">
-      <Navbar
-        topOfPage={topOfPage}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
+      <Navbar topOfPage={topOfPage} />
       <div className="w-5/6 mx-auto md:h-full">
-        {isAboveMediumScreens && (
-          <Dots currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        )}
-        <Landing setCurrentPage={setCurrentPage} />
+        {isAboveMediumScreens && <SideNav />}
+        <Landing />
       </div>
       <LineDivider />
       <div className="w-5/6 mx-auto md:h-full">
